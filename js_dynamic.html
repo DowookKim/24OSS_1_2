@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h {
+            font-weight: bold;
+            font-size: 50px;
+            box-sizing: border-box;
+        }
+
+        .p {
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+
+        function add() {
+
+            let list = [];
+            list = document.f.in.value.split(',');
+            let u = document.getElementById("ul")
+            u.innerHTML = "";
+            for (i = 0; i < list.length; i++) {
+                let li = document.createElement("li");
+                li.textContent = list[i];
+                u.appendChild(li);
+            }
+            list = [];
+            document.f.in.value = "";
+        }
+        function del() {
+            let u = document.getElementById("ul")
+            u.innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="h">
+        Dynamic Web page
+    </h1>
+    <form action="#" name="f">
+        <input type="text" name="in">
+        <button type="button" onclick="add()">추가</button>
+        <button type="reset" onclick="del()">삭제</button>
+        <ul id="ul">
+        </ul>
+    </form>
+</body>
+
+</html>

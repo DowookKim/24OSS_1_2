@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 70px;
+            padding-bottom: 20px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            height: 30px;
+            border-color: #6c757d;
+        }
+    </style>
+    <script>
+        function check_fname() {
+            let o = document.f;
+            let fn = "first name 입력필요";
+            if (o.fname.value == "") {
+                alert(fn);
+                return false;
+            }
+
+
+            else if (o.lname.value == "") {
+                let ln = "last name 입력필요";
+                alert(ln);
+                return false;
+            }
+
+            else if (o.uname.value == "") {
+                let u = "user name 입력필요";
+                alert(u);
+                return false;
+            }
+
+            else if (o.address.value == "") {
+                let a = "address 입력필요";
+                alert(a);
+                return false;
+            }
+            else if (o.country.value == "1") {
+                let c = "country 입력필요";
+                alert(c);
+                return false;
+            }
+            else if (o.state.value == "1") {
+                let c2 = "state 입력필요";
+                alert(c2);
+                return false;
+            }
+            else if (o.zip.value == "") {
+                let c3 = "zip 입력필요";
+                alert(c3);
+                return false;
+            }
+            else if (o.Nameoncard.value == "") {
+                let n = "Name on card 입력필요";
+                alert(n);
+                return false;
+            }
+            else if (o.Creditcard.value == "") {
+                let cc = "Credit card 입력필요";
+                alert(cc);
+                return false;
+            }
+            else if (o.ex.value == "") {
+                let cc2 = "Expiration 입력필요";
+                alert(cc2);
+                return false;
+            }
+            else if (o.cvv.value == "") {
+                let cc3 = "CVV 입력필요";
+                alert(cc3);
+                return false;
+            }
+            return true;
+
+        }
+
+    </script>
+</head>
+
+<body style="padding-left: 0px;">
+    <div style="padding-right: 0px;">
+        <div style="padding-top: 40px; text-align: center;">
+            <img src="bootstrap-logo.svg"><br>
+            <p1 style="font-weight: 400;font-size: 30px;">
+                Chceckout form
+            </p1><br>
+            <p1 style="font-size: 20px; font-weight: 100;">
+                Below is an example form built entirely with Bootstrap’s form controls. Each required form group has
+                a<br>
+                validation state that can be triggered by attempting to submit the form without completing it.<br>
+            </p1>
+        </div>
+        <div style="padding-top: 70px;padding-right: 250px;padding-left: 150px;">
+            <div style="float: right;width: 300px;">
+                <div>
+                    <p1 style="font-size: 25px; color: #0d6efd; margin-right: 60px; padding-left: 40px;">Your cart
+                    </p1>
+                    <p2
+                        style="font-size: 25px; color: white; background-color: #0d6efd; padding-right: 10px;padding-top: 1px;padding-bottom:1px;border-radius:  20px; padding-left: 10px;font-weight: bold;">
+                        3
+                    </p2>
+                    <ul class="list">
+                        <li>
+                            <div style="padding-right: 400px;">
+                                <div
+                                    style="width: 220px; height: 50px; border-color: #6c757d; border-style: solid;border-radius: 5px;border-width: 1px;">
+                                    <div style="padding-left: 15px;">
+                                        <p1>
+                                            Producct name
+                                        </p1>
+
+                                        <p1 style="color: #6c757d; padding-left: 58px;">
+                                            $12
+                                        </p1>
+                                        <div style="color: #6c757d;">
+                                            Brief description
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="width: 220px; height: 50px; border-color: #6c757d; border-style: solid;border-radius: 5px;border-width: 1px;">
+                                    <div style="padding-left: 15px;">
+                                        <p1>
+                                            Second product
+                                        </p1>
+
+                                        <p1 style="color: #6c757d; padding-left: 58px;">
+                                            $8
+                                        </p1>
+                                        <div style="color: #6c757d;">
+                                            Brief description
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div
+                                    style="width: 220px; height: 50px; border-color: #6c757d; border-style: solid;border-radius: 5px;border-width: 1px;">
+                                    <div style="padding-left: 15px;">
+                                        <p1>
+                                            Thrid item
+                                        </p1>
+
+                                        <p1 style="color: #6c757d; padding-left: 100px;">
+                                            $5
+                                        </p1>
+                                        <div style="color: #6c757d;">
+                                            Brief description
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="width: 220px; height: 50px; border-color: #6c757d; border-style: solid;border-radius: 5px;border-width: 1px;">
+                                    <div style="padding-left: 15px;">
+                                        <p1>
+                                            Promo code
+                                        </p1>
+
+                                        <p1 style="color: #6c757d; padding-left: 80px;">
+                                            -$5
+                                        </p1>
+                                        <div style="color: #6c757d;">
+                                            EXAMPLECODE
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="width: 220px; height: 30px; border-color: #6c757d; border-style: solid;border-radius: 5px;border-width: 1px;">
+                                    <div style="padding-left: 15px;">
+                                        <p1>
+                                            Total (USD)
+                                        </p1>
+
+                                        <p1 style="color: black; padding-left: 85px;font-weight: bold;">
+                                            $20
+                                        </p1>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <div
+                            style="border-style: solid; border-radius: 5px; border-width: 1px; width: 220px;margin-top: 25px;">
+                            <li style="padding-top: 10px; padding-bottom: 10px; padding-left: 6px;">
+                                <input type="text" placeholder="Promo code" style="width: 120px;">
+                                <button type="button"
+                                    style="font-weight:bold; color: white; background-color: #6c757d; margin-right: 300px; height: 35px; padding-right: 20px;">Redeem</button>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-right: 600px;">
+                <form style="margin-left: 150px;" name="f" action = "#" onsubmit="return check_fname()">
+                    <p1 style="font-size: 25px;">Billing address</p1><br>
+                    <div>
+                        <p1 style="font-size: 15px;font-weight: bold;">
+                            <pre>First name                         Last name</pre>
+                        </p1>
+                        <div style="width: 700px;">
+                            <input type="text" name="fname" placeholder=""
+                                style="margin-right: 10px; height: 30px;width: 280px;" />
+                            <input type="text" name="lname" placeholder="" style=" height: 30px;width: 280px;" /><br>
+                        </div>
+
+                        Username<br>
+                        <input type="text" name="uname" placeholder="Username"
+                            style="width: 585px; margin-bottom: 10px;"/><br>
+                        Email(Optional)<br>
+                        <input type="text" name="email" placeholder="you@example.com " style="width: 585px;" /><br>
+                        Address<br>
+                        <input type="text" name="address" placeholder="1234 Main St" style="width: 585px;" /><br>
+                        Address2(Optional)<br>
+                        <input type="text" name="address2" placeholder="Apartment or suite" style="width: 585px;" /><br>
+                        <div style="width: 585px;">
+                            <p1 style="padding-right: 160px;">Country</p1>
+                            <p2 style="padding-right: 148px;">State</p2>
+                            <p3>Zip</p3>
+                        </div>
+                        <div style="width: 590px;">
+                            <select name="country" style="width: 220px; height: 35px;">
+                                <option value="1">
+                                    Choose...
+                                </option>
+                                <option value="2">
+                                    United States
+                                </option>
+                            </select>
+                            <select name="state" style="width: 180px; height: 35px;">
+                                <option value="1">
+                                    Choose...
+                                </option>
+                                <option value="2">
+                                    California
+                                </option>
+                            </select>
+                            <input type="text" name="zip" style="width: 170px; height: 30px;" />
+                        </div>
+                        <hr style="width: 585px;margin-top: 30px;">
+                        <div style="width: 585px;">
+                            <input type="checkbox" checked>
+                            <p1>Shipping address is the same as my billing address</p1>
+                        </div>
+                        <div style="width: 585px;">
+                            <input type="checkbox">
+                            <p1>Save this information for next time</p1>
+                        </div>
+                        <hr style="width: 585px;margin-top: 30px;">
+                        <div>
+                            <p1 style="font-size: 30px;">Payment</p1><br>
+                            <div>
+                                <input type="radio" name="pay" checked style="border-radius: 50%;" />
+                                <p1>Credit card</p1><br>
+                            </div>
+                            <input type="radio" name="pay" />
+                            <p1>Debit card</p1><br>
+                            <input type="radio" name="pay" />
+                            <p1>PayPal</p1><br>
+                        </div>
+                        <div style="width: 585px;">
+                            <div>
+                                <p1 style="padding-right: 135px;">
+                                    Name on card
+                                </p1>
+                                <p1>
+                                    Credit card number
+                                </p1>
+                            </div>
+                            <p1 style="margin-bottom:100px ;">
+                                <textarea name="Nameoncard" cols="30" rows="5"></textarea>
+                                <textarea name="Creditcard" cols="30" rows="5"></textarea>
+                            </p1>
+
+                            <div>
+                                <p1 style="padding-right: 100px; color: #6c757d;;">
+                                    Full name as displayed on card
+                                </p1>
+                            </div>
+                        </div>
+                        <div style="width: 585px;">
+                            <div>
+                                <p1 style="padding-right: 135px;">Expiration</p1>
+                                <p1>CVV</p1>
+                            </div>
+
+                            <div><input type="text" name="ex" style="margin-right: 40px;"><input type="text" name="cvv">
+                            </div>
+                            <hr style="width: 585px;margin-top: 30px;">
+                        </div>
+                        <input type="date" min="2019-01-01" max="2030-12-31" name="fromdate"><br>
+                        <input type="submit" name="submit" value="Continue to checkout"
+                            style="width: 585px; height: 50px; font-size: 20px; background-color: #0d6efd; color: white; border-radius: 10px; border-color: #0d6efd;border-width: 0px;margin-top: 10px;"><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

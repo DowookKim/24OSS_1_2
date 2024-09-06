@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="form2.html">
+        Billing address<br>
+        <pre> First name                 Last name<br></pre>
+        <input type="text" name="fname" placeholder="" />
+        <input type="text" name="lname" placeholder="" /><br>
+        Username<br>
+        <input type="text" name="uname" placeholder="Username" /><br>
+        Email(Optional)
+        <input type="text" name="email" placeholder="you@example.com" /><br>
+        Address<br>
+        <input type="text" name="address" placeholder="1234 Main St" /><br>
+        Address2(Optional)<br>
+        <input type="text" name="address2" placeholder="Apartment or suite" /><br>
+        <pre>
+Country           State        Zip
+        </pre>
+        <select name="country">
+            <option value="1">
+                Choose...
+            </option>
+            <option value="2">
+                United States
+            </option>
+        </select>
+        <select name="state">
+            <option value="1">
+                Choose...
+            </option>
+            <option value="2">
+                California
+            </option>
+        </select>
+        <input type="text" name="zip" /><br>
+        Payment<br>
+        <input type="radio" name="pay" checked /> Credit card<br>
+        <input type="radio" name="pay" />Debit card<br>
+        <input type="radio" name="pay" />PayPal<br>
+        Name on card<br>
+        <textarea name="Name on card" cols="30" rows="5"></textarea><br>
+        Full name as displayed on card<br>
+        Credit card number<br>
+        <input type="text" name="ccn"><br>
+        Expiration<br>
+        <input type="text" name="ex"><br>
+        CVV<br>
+        <input type="text" name="cvv"><br>
+        <hr>
+        <input type="date" min="2019-01-01" max="2030-12-31" name="fromdate"><br>
+        <input type="submit" name="submit" value="Continue to checkout"><br>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
